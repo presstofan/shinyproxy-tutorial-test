@@ -38,8 +38,8 @@ proxy:
       display-name: Euler's number
       container-cmd: ["R", "-e", "shiny::runApp('/root/euler')"]
       container-image: presstofan/shiny-euler-app
-      port: 3838
       access-groups: admins
+      container-network: sp-net
 
 server:
   useForwardHeaders: true # this is very important to make the AWS Cognito auth works
