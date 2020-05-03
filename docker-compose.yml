@@ -27,7 +27,7 @@ services:
       - sp-net
     entrypoint: "/bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'"
   shinyproxy:
-    image: YOUR_USERNAME/shinyproxy-example
+    image: presstofan/shinyproxy-example
     depends_on:
       - euler
     container_name: shinyproxy
@@ -39,7 +39,7 @@ services:
     networks:
       - sp-net
   euler:
-    image: YOUR_USERNAME/shiny-euler-app
+    image: presstofan/shiny-euler-app
 
 networks:
   sp-net:
