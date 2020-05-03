@@ -17,7 +17,7 @@ proxy:
     auth-url: https://test-databentobox.auth.us-east-1.amazoncognito.com/oauth2/authorize
     token-url: https://test-databentobox.auth.us-east-1.amazoncognito.com/oauth2/token
     jwks-url: https://cognito-idp.us-east-1.amazonaws.com/us-east-1_JpYhc28Wc/.well-known/jwks.json
-    logout-url: https://test-databentobox.auth.us-east-1.amazoncognito.com/logout?client_id=vbrs7mjull4inb3rimhjrgdi1&logout_uri=test.databentobox.com
+    logout-url: https://test-databentobox.auth.us-east-1.amazoncognito.com/logout?client_id=vbrs7mjull4inb3rimhjrgdi1&logout_uri=https://test.databentobox.com
     client-id: vbrs7mjull4inb3rimhjrgdi1 # get this from AWS Cognito user pool management page
     client-secret: 12a6nsm442ololq018lj8hj0hvhuiai0mqaa6mqdq43f6sia0fen # get this from AWS Cognito user pool management page
   
